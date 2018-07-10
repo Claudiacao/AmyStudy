@@ -3,7 +3,7 @@ oneside,
 12pt, % The default document font size, options: 10pt, 11pt, 12pt
 %oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 english, % ngerman for German
-onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+doublespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 %liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
@@ -40,7 +40,6 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 \usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{url}
-\usepackage[final]{pdfpages}
 \usepackage{changepage}
 \usepackage[toc,page]{appendix}
 \usepackage[export]{adjustbox}
@@ -59,7 +58,7 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 
 \geometry{
 	paper=a4paper, % Change to letterpaper for US letter
-	inner=4cm, % Inner margin
+	inner=5cm, % Inner margin
 	outer=2cm, % Outer margin
 	bindingoffset=.5cm, % Binding offset
 	top=2.5cm, % Top margin
@@ -91,20 +90,11 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 %\end{acknowledgements}
 
 
-\tableofcontents % Prints the main table of contents
+% \tableofcontents % Prints the main table of contents
 
-\listoffigures % Prints the list of figures
+% \listoffigures % Prints the list of figures
 
-\listoftables % Prints the list of tables
-
-\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
-\centering
-\textbf{RT} & \textbf{R}esponse~\textbf{T}ime\\
-\textbf{EMG} & \textbf{E}lectro\textbf{m}yo\textbf{g}raphy\\
-\textbf{M} & \textbf{M}ean\\
-\textbf{SD} & \textbf{S}tandard~\textbf{D}eviation\\
-
-\end{abbreviations}
+% \listoftables % Prints the list of tables
 
 
 \mainmatter % Begin numeric (1,2,3...) page numbering
@@ -116,21 +106,19 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 
 \include{Abstract}
 
-\include{introduction}
+\include{Introduction}
 
 \include{background}
 
-\include{hypothesis}
+\include{Criticism}
 
-\include{method}
+\include{Reinterpretation}
 
-\include{results}
+\include{Solution}
 
 \include{discussion}
 
 \pagebreak
-
-\include{appendix}
 
 \emergencystretch 1.5em
 %\printbibliography[heading=bibintoc]
